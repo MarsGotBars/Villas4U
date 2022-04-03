@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="media/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="../../media/im.png" type="image/gif">
+    <title>Villas4U | Contact</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- navigatie menu -->
+        <nav>
+            <!-- hamburger menu -->
+            <div class="hamburger">
+                <div class="line" id="lineOut1"></div>
+                <div class="line" id="lineOut2"></div>
+                <div class="line" id="lineOut3"></div>
+            </div>
+            <!-- links -->
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#content">Villas</a></li>
+                <li><a class="selected" href="#">Contact</a></li>
+            </ul>
+            <!-- logo -->
+            <figure>
+                <a href="../../index.html"><img src="media/logo2.png"></a>
+            </figure>
+        </nav>      
+    </header>
+    <!-- content -->
+    <section class="bottom">
+        <main id="content" data-aos="zoom-in" data-aos-delay="60" data-aos-easing="ease">
+            <div class="box">
+                <div class="card">
+                  <div class="imgBx">
+                      <img src="media/Matthias.jpg" alt="images">
+                  </div>
+                  <div class="details">
+                      <h2>Matthias Dekker<br><span>CFO Villa 4u</span></h2>
+                  </div>
+                </div>
+              
+                 <div class="card">
+                   <div class="imgBx">
+                      <img src="media/marcin.jpg" alt="images">
+                   </div>
+                   <div class="details">
+                      <h2>Marcin Magdziak<br><span>Ceo Villas4U</span></h2>
+                    </div>
+                 </div>
+          
+                 <div class="card">
+                   <div class="imgBx">
+                      <img src="media/delano.jpg" alt="images">
+                   </div>
+                   <div class="details">
+                      <h2>Delano van Aken<br><span>COO Villas4U</span></h2>
+                    </div>
+                 </div>
+            </div>
+        </div>
+                 <section class="formulier">
+                    <form class="container" action="verwerkingcontact.php" method="POST" name="contact" data-aos="zoom-left">
+                       <h2>Waarmee kunnen we u helpen?</h2>
+                       <ul>
+                               
+                           <li>
+                               <input type="radio" name="opties"  id="optie_2" class="opties" value="contact">
+                               <label for="optie_2">Neem contact op.</label>
+                           </li>
+                                
+                           <li>
+                               <input type="radio" name="opties" id="optie_3" class="opties" value="afspraak">
+                               <label for="optie_3">Maak een afspraak.</label>
+                           </li>    
+                           <section class="antwoorden">
+                               <li id="algemene_info" class="algemene_info" >
+                                   <label for="vnaam">Voornaam:</label><br>
+                                   <input type="text" id="vnaam" name="vnaam" placeholder="Jan" required autocomplete="off"><br>
+                                   <label for="anaam">Achternaam:</label><br>
+                                   <input type="text" id="anaam" name="anaam" placeholder="Jansen" required autocomplete="off"><br>
+                                   <label for="email">Email Adres:</label><br>
+                                   <input type="email" id="email" name="email" placeholder="JanJansen@gmail.com" required autocomplete="off"><br>
+                                   <label for="tel">Telefoonnummer:</label><br>
+                                   <input type="tel" id="tel" name="tel" placeholder="0612345678" required autocomplete="off"><br>
+                               </li>
+           
+                               <li id="bieding" class="bieding">
+                                   <label for="bieding_input">Voer hier uw bieding in:</label><br>
+                                   <input type="number" name="bieding_bedrag" id="bieding_input" placeholder="1000000" onblur="getal()">
+                                   <label for="bieding_input2">Voer hier het adres in waar u op wilt bieden.</label><br>
+                                   <select id="bieding_input2" name="adres" id="adres" type="adres">
+                                    <option value="">--Kies een optie--</option>
+                                    <option value="Zeeweg 17">Zeeweg 17</option>
+                                    <option value="Bergweg 38">Bergweg 38</option>
+                                    <option value="Rhemen van Rhemenshuizen 13">Rhemen van Rhemenshuizen 13</option>
+                                  </select>
+                               </li>
+           
+                               <li id="contact" class="contact">
+                                   <label for="contact">Vertel ons hier uw vraag:</label>
+                                   <textarea name="contact" id="contact_input" cols="25" rows="10" placeholder="typ hier"></textarea>
+           
+                               </li>
+           
+                               <li id="kalender" class="kalender">
+                                   <label for="kalender">Vertel ons hier wanneer uw een afspraak wilt maken:</label>
+                                   <input type="date" name="kalender" id="kalender_input">
+                               </li>
+                           </section>
+                           <li>
+                               <input type="submit" name="submit" value="Kies eerst een optie" id="verstuur" disabled>
+                           </li>
+                       </ul>
+                   </form>
+               </section>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9841.43225881808!2d4.4774831!3d51.9274221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d89cc9d1d5c201a!2sGrafisch%20Lyceum%20Rotterdam!5e0!3m2!1snl!2snl!4v1622034254651!5m2!1snl!2snl" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </main>
+        <!-- footer -->
+        <footer>
+            <!-- copyright -->
+            <p>© Villas4U 2021</p>
+            <!-- icons -->
+            <aside>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../../svg/instagram.svg" alt=""></a>
+                <!-- tooltip -->
+                <figure class="tooltip" onclick="tooltip()">
+                    <!-- tooltip tekst -->
+                    <span class="tooltiptext">Klik om te kopiëren</span>
+                    <img href="https://www.youtube.com/" onclick="copy(event)"src="../../svg/share-2.svg" alt="">
+                </figure>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../../svg/facebook.svg" alt=""></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="../../svg/linkedin.svg" alt=""></a>
+            </aside>
+        </footer>
+        <p hidden class="hidden">
+            Gemaakt door Matthias, Delano en Marcin.
+        </p>
+    </section>
+    <script src="villa.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../../maker.js"></script>
+</body>
+</html>

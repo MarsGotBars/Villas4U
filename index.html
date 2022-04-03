@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="media/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="icon" href="media/im.png" type="image/gif">
+        <title>Villas4U | Home</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- navigatie menu -->
+            <nav>
+                <!-- hamburger menu -->
+                <div class="hamburger">
+                    <div class="line" id="lineOut1"></div>
+                    <div class="line" id="lineOut2"></div>
+                    <div class="line" id="lineOut3"></div>
+                </div>
+                <!-- links -->
+                <ul class="nav-links">
+                    <li><a class="selected" href="#">Home</a></li>
+                    <li><a href="#content">Villas</a></li>
+                    <li><a href="pages/contact/index.html">Contact</a></li>
+                </ul>
+                <!-- logo -->
+                <figure>
+                    <a href="index.html"><img src="media/logo2.png"></a>
+                </figure>
+            </nav>      
+        </header>
+        <!-- bovenste gedeelte pagina -->
+        <section class="top">
+            <!-- image container -->
+            <figure>
+                <!-- h1 tekst -->
+                <article>
+                    <h1>Villas4U</h1>
+                </article>
+                <!-- arrow href -->
+                <p>
+                    <a href="#content" class="arrow down"></a>
+                </p>
+            </figure>
+        </section>
+        <!-- onderste gedeelte pagina -->
+        <main class="bottom" id="content">
+            <!-- javascript animatie -->
+            <section class="mid" data-aos="zoom-in" data-aos-delay="80" data-aos-easing="ease">
+                <!-- content wrapper -->
+                <section class="wrap">
+                    <!-- card -->
+                    <section class="card card1">
+                        <a href="pages/Zeeweg/index.html">
+                            <!-- image -->
+                            <figure class="container">
+                                <img src="media/v4.jpg">
+                            </figure>
+                        </a>    
+                        <!-- details -->
+                        <section class="details">
+                            <h3><a href="pages/Zeeweg/index.html">Zeeweg 17</a></h3>
+                            <p id="prijsVilla1">Startprijs: € 2.200.000 k.k.</p>
+                        </section>
+                    </section>
+                    <!-- card -->
+                    <section class="card card2">
+                        <a href="pages/Bergweg/index.html">
+                            <!-- image -->
+                            <figure class="container">
+                                <img src="media/v5.jpg">
+                            </figure>
+                        </a>
+                        <!-- details -->
+                        <section class="details">
+                            <h3><a href="pages/Bergweg/index.html">Bergweg 38</a></h3>
+                            <p id="prijsVilla2">Startprijs: € 1.989.000 k.k.</p>
+                        </section>
+                    </section>
+                    <!-- card -->
+                    <section class="card card3">
+                        <a href="pages/Rhemen/index.html">
+                            <!-- image -->
+                            <figure class="container">
+                                <img src="media/v3.jpg">
+                            </figure>
+                        </a>
+                        <!-- details -->
+                        <section class="details">
+                            <h3><a href="pages/Rhemen/index.html">Laan van Rhemen van Rhemenshuizen 13</a></h3>
+                            <p id="prijsVilla3">Startprijs: € 2.650.000 k.k.</p>
+                        </section>
+                    </section>
+                    <!-- card -->
+                    <section class="card card4">
+                            <!-- image -->
+                            <figure class="container na">
+                                <img src="media/v1.jpg">
+                            </figure>
+                        <!-- details -->
+                        <section class="details">
+                            <h3>Binnenkort beschikbaar</h3>
+                            <p>Startprijs: Nog niet beschikbaar</p>
+                        </section>
+                    </section>
+                    <!-- card -->
+                    <section class="card card5">
+                            <!-- image -->
+                            <figure class="container na">
+                                <img src="media/v2.jpg">
+                            </figure>
+                        <!-- details -->
+                        <section class="details">
+                            <h3>Binnenkort beschikbaar</h3>
+                            <p >Startprijs: Nog niet beschikbaar</p>
+                        </section>
+                    </section>
+                    <!-- card -->
+                    <section class="card card6">
+                            <!-- image -->
+                            <figure class="container na">
+                                <img src="media/v6.jpg">
+                            </figure>
+                        <!-- details -->
+                        <section class="details">
+                            <h3>Binnenkort beschikbaar</h3>
+                            <p>Startprijs: Nog niet beschikbaar</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <!-- footer -->
+            <footer>
+                <!-- copyright -->
+                <p>© Villas4U 2021</p>
+                <!-- icons -->
+                <aside>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="svg/instagram.svg" alt=""></a>
+                    <!-- tooltip -->
+                    <figure class="tooltip" onclick="tooltip()">
+                        <!-- tooltip tekst -->
+                        <span class="tooltiptext">Klik om te kopiëren</span>
+                        <img href="https://www.youtube.com/watch?v=BBJa32lCaaY" onclick="copy(event)"src="svg/share-2.svg" alt="">
+                    </figure>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="svg/facebook.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="svg/linkedin.svg" alt=""></a>
+                </aside>
+            </footer>
+            <p hidden class="hidden">
+                Gemaakt door Marcin.
+            </p>
+        </main>
+        <!-- scripts -->
+        <script src="villa.js"></script>
+        <!-- animatie script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- initialisatie script -->
+        <script>
+            AOS.init();
+        </script>
+        <!-- maker script -->
+        <script src="maker.js"></script>
+    </body>
+</html>
